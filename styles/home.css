@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --BG-COLOR-DARK: #000000;
+  --COLOR-TEXT-DARK: #ffffff;
+  --COLOR-TEXT-LIGHT: #323238;
+  --BG-COLOR-LIGHT: #ffffff;
+  --BG-COLOR-SELECTION: #02799d;
+  --COLOR-TEXT-SELECTION: #ffffff;
+}
+
+html.light {
+  --BG-COLOR-DARK: #ffffff;
+  --COLOR-TEXT-DARK: #323238;
+}
+
+html.light .ph-sun,
+html:not(.light) .ph-moon {
+  display: none;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 19.7rem;
+}
+
+#button-toggle-mode {
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+  background-color: transparent;
+  color: var(--COLOR-TEXT-DARK);
+  font-size: 3.2rem;
+  border: none;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  font-size: 1.6rem;
+  background: var(--BG-COLOR-DARK);
+  color: var(--COLOR-TEXT-DARK);
+}
+
+button {
+  cursor: pointer;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  font-family: "Roboto";
+  font-size: 12.6rem;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+#controls button {
+  border: none;
+  background: transparent;
+  font-size: 4.8rem;
+  color: var(--COLOR-TEXT-DARK);
+}
+
+.cards {
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card button {
+  font-size: 5.6rem;
+  width: 13.8rem;
+  height: 15.2rem;
+  border: none;
+  border-radius: 1.6rem;
+}
+
+.selection {
+  background-color: #02799d;
+  color: white;
+}
+
+.sr-only{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  appearance: none;
+}
