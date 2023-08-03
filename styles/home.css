@@ -80,7 +80,7 @@ button {
   color: var(--COLOR-TEXT-DARK);
 }
 
-.cards {
+#cards {
   display: grid;
   gap: 3.2rem;
   grid-template-columns: repeat(2, 1fr);

@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="../assets/alarme.png" type="image/x-png" />
 
     <script src="../scripts/home.js" type="module" defer></script>
-    <script src="../scripts/toggleMode.js"></script>
+    <script src="../scripts/toggleMode.js" type="module"></script>
     <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
 
     <title>Focus Timer 2.0 - Pomodoro</title>
@@ -28,33 +28,46 @@
 
       <div class="timers">
         <section class="time">
-          <span id="minutes">25</span>
+          <span id="minutes">00</span>
           <span>:</span>
           <span id="seconds">00</span>
         </section>
 
         <section id="controls">
-          <button class="ph-bold ph-play-circle"></button>
-          <button class="ph-bold ph-stop-circle"></button>
-          <button class="ph-bold ph-plus-circle"></button>
-          <button class="ph-bold ph-minus-circle"></button>
+          <button data-action="toggleRunning" 
+          class="ph-bold ph-play-circle">
+        </button>
+
+          <button data-action="set"
+          class="ph-bold ph-stop-circle">
+        </button>
+          <button id="upPlus"
+          class="ph-bold ph-plus-circle">
+        </button>
+          <button id="downPlus"
+          class="ph-bold ph-minus-circle">
+        </button>
         </section>
       </div>
 
-      <div class="cards">
+      <section id="cards">
         <div class="card">
-          <button class="ph ph-tree"></button>
+          <button id="tree"
+          class="ph ph-tree"></button>
         </div>
         <div class="card">
-          <button class="ph ph-cloud-snow selection"></button>
+          <button id="cloudSnow" 
+          class="ph ph-cloud-snow"></button>
         </div>
         <div class="card">
-          <button class="ph ph-storefront"></button>
+          <button id="storeFront" 
+          class="ph ph-storefront"></button>
         </div>
         <div class="card">
-          <button class="ph ph-fire"></button>
+          <button id="fire"
+           class="ph ph-fire"></button>
         </div>
-      </div>
+      </section>
     </div>
   </body>
 </html>

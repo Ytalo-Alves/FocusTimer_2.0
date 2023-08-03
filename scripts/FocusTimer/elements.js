@@ -1,3 +1,10 @@
-const minutes = document.getElementById('minutes')
-const seconds = document.getElementById('seconds')
-const controls = document.getElementById('controls');
+export const minutes = document.getElementById('minutes')
+export const seconds = document.getElementById('seconds')
+export const controls = document.getElementById('controls');
+export const tree = document.getElementById('tree');
+export const cloudSnow = document.getElementById('cloudSnow')
+export const storeFront = document.getElementById('storeFront')
+export const fire = document.getElementById('fire')
+export const card = document.querySelector('.card')
+export const upPlus = document.getElementById('upPlus')
+export const downPlus = document.getElementById('downPlus')
